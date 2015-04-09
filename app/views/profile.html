@@ -1,0 +1,102 @@
+<div class="content-section-b">
+  <div class="container" style="margin-top: 30px">
+    <div class="row">
+      <div class="col-md-6">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h1 class="panel-title"><strong>Account Information</strong></h1>
+              </div>
+              <div class="panel-body">
+                <label>Name:</label>
+                <p class="notBold">{{ userName }}</p>
+                <label>Email Address:</label>
+                <p class="notBold">{{ email }}</p>
+                <div class="list-group">
+                  <a ng-click="openPhones('lg')" class="list-group-item"><span class="badge">2</span><i class="fa fa-phone fa-fw"></i> Phone Numbers</a>
+                  <a ng-click="openAutos()" class="list-group-item"><span class="badge">3</span><i class="fa fa-automobile fa-fw"></i> Vehicles</a>
+                  <a ng-click="openLocations()" class="list-group-item"><span class="badge">2</span><i class="fa fa-home fa-fw"></i> Locations</a>
+                  <a ng-click="openServHist('lg')" class="list-group-item"><i class="fa fa-file-text fa-fw"></i> Service History</a>
+                  <a ng-click="openProfile('lg')" class="list-group-item"><i class="fa fa-user fa-fw"></i> Update profile</a>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h1 class="panel-title"><strong>Schedule a service</strong></h1>
+              </div>
+              <div class="panel-body">
+
+              </div>
+          </div>
+      </div>
+    </div>
+    <script type="text/ng-template" id="phoneModalContent.html">
+        <div class="modal-header">
+            <button type="button" class="close" ng-click="phonesClose()" aria-hidden="true">&times;</button>
+            <h3 class="modal-title">Phone Numbers</h3>
+        </div>
+        <div class="modal-body">
+          <div class="table-responsive">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Phone #</th>
+                <th>Type</th>
+                <th>Primary</th>
+                <th>Text</th>
+                <th>Nick Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>(631) 384-4779</td>
+                <td>CELL</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>ROB CELL</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+    </script>
+    <script type="text/ng-template" id="autosModalContent.html">
+        <div class="modal-header">
+            <button type="button" class="close" ng-click="autosClose()" aria-hidden="true">&times;</button>
+            <h3 class="modal-title">Vehicles</h3>
+        </div>
+        <div class="modal-body">
+            Modal Body
+        </div>
+    </script>
+    <script type="text/ng-template" id="locationsModalContent.html">
+        <div class="modal-header">
+            <button type="button" class="close" ng-click="locationsClose()" aria-hidden="true">&times;</button>
+            <h3 class="modal-title">Locations</h3>
+        </div>
+        <div class="modal-body">
+            Modal Body
+        </div>
+    </script>
+    <script type="text/ng-template" id="servHistModalContent.html">
+        <div class="modal-header">
+            <button type="button" class="close" ng-click="servHistClose()" aria-hidden="true">&times;</button>
+            <h3 class="modal-title">Service History</h3>
+        </div>
+        <div class="modal-body">
+            Modal Body
+        </div>
+    </script>
+    <script type="text/ng-template" id="profileModalContent.html">
+        <div class="modal-header">
+            <button type="button" class="close" ng-click="profileClose()" aria-hidden="true">&times;</button>
+            <h3 class="modal-title">Update Profile</h3>
+        </div>
+        <div class="modal-body">
+            Modal Body
+        </div>
+    </script>
+  </div>
+</div>

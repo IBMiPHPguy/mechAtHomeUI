@@ -1,0 +1,66 @@
+<!-- Page Content -->
+
+<div class="content-section-b">
+
+    <div class="container" style="margin-top: 30px">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="section-heading">Schedule a service</h2>
+          <p class="lead">
+          To schedule a service please log in or register for an account.
+          </p>
+          <ul class="list-inline intro-social-buttons">
+              <li>
+                  <a href="#register" class="btn btn-default btn-lg"><i class="fa fa-user fa-fw"></i> <span class="network-name">Register for an account</span></a>
+              </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+            <div ng-show="error" class="alert alert-danger">{{error}}</div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h1 class="panel-title"><strong>Sign In </strong></h1>
+                </div>
+                <div class="panel-body">
+                    <form name="form" ng-submit="login()" role="form">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" ng-model="email" placeholder="Enter email" required="required"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password <a href="#passwordReset">(forgot password)</a></label>
+                            <input type="password" class="form-control" id="password" ng-model="password" placeholder="Password" required="required"/>
+                        </div>
+                        <button type="submit" class="btn btn-sm btn-default">Sign in <i class="fa fa-lock fa-fw"></i></button>
+                        <img ng-if="dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="/>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.content-section-a -->
+<div class="banner">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Special Offers!</h2>
+            </div>
+            <div class="col-lg-6">
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-money fa-fw"></i> <span class="network-name"> Show me the deals!</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</div>
